@@ -1,0 +1,15 @@
+/* CSS Root varible */
+:root {
+    /* Colors */
+    --Midnight-Blue: #131842;
+    --Blush-Coral: #E68369;
+    --Peach-Cream: #ECCEAE;
+    --Vanilla-Glow: #FBF6E2;
+
+    /* Utils */
+    --Pad-X: 28px;
+}
+
+#navbar {
+    padding: 12px var(--Pad-X);
+}
