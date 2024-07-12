@@ -4,7 +4,52 @@
 }
 
 .box {
-    border: 1px solid #131842;
     width: 300px;
     height: 250px;
+}
+
+.box:first-child {
+    background: url('/src/images/women.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box:nth-child(2) {
+    background: url('/src/images/men.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box:nth-child(3) {
+    background: url('/src/images/kids.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box:last-child {
+    background: url('/src/images/accessories.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.description {
+    background: none;
+    color: white;
+}
+
+.box {
+    overflow: hidden;
+}
+
+.box:hover .box-wrapper {
+    transform: translateY(0);
+}
+
+.box-wrapper {
+    transform: translateY(100%);
+    transition: all .3s ease;
 }
